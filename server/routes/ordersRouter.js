@@ -56,17 +56,6 @@ router.delete('/client/:id', async (req, res) => {
 	} catch (error) {
 		res.status(500).json(console.log(error), 'Что-то не так')
 	}
-
 });
-
-
-
-// router.get('/', async (req, res) => {
-
-// 	const order = await orders.find();
-// 	res.json(order);
-
-// });
-
 
 module.exports = router;
