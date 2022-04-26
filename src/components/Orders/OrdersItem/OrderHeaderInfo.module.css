@@ -1,0 +1,83 @@
+.headerInfo {
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 379px;
+	height: 247px;
+	top: 67px;
+	background: #ece9e9;
+	border-radius: 6px;
+	color: #000000;
+}
+
+.headerInfo__active {
+	position: relative;
+	width: 415px;
+	height: 677px;
+	background: #FFFFFF;
+	color: #000000;
+}
+
+.headerInfo__item {
+	padding: 25px 17.33px 23.26px 17.33px;
+}
+
+.headerInfo__order {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.headerInfo__orderDay {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 100%;
+	width: 188.09px;
+	height: 39.17px;
+}
+
+.headerInfo__package {
+	display: flex;
+	flex-direction: column;
+
+	padding-right: 22px;
+	width: 68px;
+	height: 31px;
+}
+
+.headerInfo__packageName {
+	color: #B1B1B1;
+	font-size: 9.75059px;
+}
+
+.headerInfo__packageCalories {
+	font-weight: 700;
+	font-size: 9.75059px;
+	line-height: 16px;
+}
+
+.headerInfo__progressBar {
+	display: flex;
+	justify-content: center;
+	padding-top: 19.91px;
+}
+
+.headerInfo__dateDelivery {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 7.75px;
+}
+
+.dateDeliveryNext,
+.dateNextDate {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 110%;
+	color: #9E9E9E;
+}
+
+.diffDate {
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 110%;
+}

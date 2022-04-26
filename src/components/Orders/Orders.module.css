@@ -1,0 +1,49 @@
+.orders {
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	width: 415px;
+	height: auto;
+	background: #FFFFFF;
+}
+
+.ordersBtn__text {
+	cursor: pointer;
+	position: absolute;
+	width: 160px;
+	height: 26px;
+	left: 24px;
+	top: 30px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0.3px;
+	color: #252525;
+
+}
+
+.ordersBtn__count {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 16px;
+	color: #929292;
+}
+
+.ordersList {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+}
+
+.ordersBtn__back {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 22px;
+	letter-spacing: -0.41px;
+	width: 55px;
+	height: 24px;
+	color: #1E6FB9;
+}

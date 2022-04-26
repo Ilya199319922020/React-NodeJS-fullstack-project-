@@ -1,0 +1,96 @@
+.orderDetail {
+	padding: 20px 17.33px 0 17.33px;
+	color: #070707;
+}
+
+.orderDetail__wraper {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	width: 380.35px;
+	height: 677px;
+}
+
+.orderDetail__convertDateList {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+.orderDetail__text {
+	width: 87px;
+	height: 20px;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 100%;
+}
+
+.orderDetail__dataDelivery {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 39.16px;
+}
+
+.orderDetail__icon {
+	width: 29.9px;
+	height: 41.71px;
+}
+
+.orderDetail__btn {
+	display: flex;
+}
+
+.orderDetail__dataDelivery {
+	display: flex;
+	align-items: center;
+}
+
+.orderDetail__convertDateList,
+.orderDetail__interval {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.orderDetail__btn {
+	margin: 0 auto;
+	margin-top: 54.75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 379px;
+	height: 110px;
+	background: #D6D6D6;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.orderDetail__btnCreate {
+	height: 54px;
+	background: #F5F5F5;
+	outline: none;
+	border: none;
+	border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+
+.orderDetail__btnCreateText,
+.orderDetail__btnDeleteText {
+	height: 24px;
+	width: 171px;
+	color: #3F3F3F;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.orderDetail__btnDeleteText {}
+
+.orderDetail__btnDelete {
+	height: 55px;
+	background: #F5F5F5;
+	outline: none;
+	border: none;
+	border-radius: 0 0 10px 10px;
+	cursor: pointer;
+}
