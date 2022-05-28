@@ -12,7 +12,6 @@ router.get('/user/:id', async (req, res) => {
 	} catch (error) {
 		res.status(500).json(console.log(error), 'Что-то не так')
 	}
-
 });
 router.post('/create', async (req, res) => {
 	try {
@@ -36,7 +35,6 @@ router.get('/client/:id', async (req, res) => {
 	} catch (error) {
 		res.status(500).json(console.log(error), 'Что-то не так')
 	}
-
 });
 
 router.get('/orderDetail/:id', async (req, res) => {

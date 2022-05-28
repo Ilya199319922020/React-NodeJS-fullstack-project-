@@ -2,7 +2,6 @@ const express = require('express');
 const Session = require('../models/Session');
 const router = express.Router();
 
-
 router.get('/', async function (req, res, next) {
 
 	const headerData = req.headers['authorization'];
@@ -21,8 +20,7 @@ router.get('/', async function (req, res, next) {
 
 	await session.save();
 	res.status(200).send(session.user);
-
-})
+});
 
 module.exports = router;
 

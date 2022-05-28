@@ -14,7 +14,7 @@ const LoginForm = (props) => {
 				login: '',
 				password: '',
 			}
-		)
+		);
 	};
 
 	const onSubmit = (values, onSubmitProps) => {
@@ -26,8 +26,8 @@ const LoginForm = (props) => {
 	const validationSchema = () => Yup.object({
 		login: Yup.string().required('Required'),
 		password: Yup.string().required('Required'),
+	});
 
-	})
 	return (
 		<Formik
 			initialValues={initialValues}
@@ -36,43 +36,53 @@ const LoginForm = (props) => {
 		>
 			{formik => {
 				return (
-					<Form className={s.loginForm}>
+					<Form
+						className={s.loginForm}
+					>
 						<div>
-							<Field className={s.loginForm__login}
+							<Field
+								className={s.loginForm__login}
 								type={'text'}
 								name={'login'}
 								component={'input'}
 								placeholder={"Логин"}
 							/>
-							<ErrorMessage name='login' />
+							<ErrorMessage
+								name='login'
+							/>
 						</div>
 						<div>
-							<Field className={s.loginForm__password}
+							<Field
+								className={s.loginForm__password}
 								placeholder={"Пароль"}
 								name={'password'}
 								component={'input'}
 								type={'password'}
 							/>
-							<ErrorMessage name='password' />
+							<ErrorMessage
+								name='password'
+							/>
 						</div>
 
 						<div>
-							<button className={s.loginForm__button}
+							<button
+								className={s.loginForm__button}
 								type={'submit'}
 								disabled={!formik.isValid || formik.isSubmitting}
-							><a>ВОЙТИ</a>
+							>
+								<a>
+									ВОЙТИ
+								</a>
 							</button>
 						</div>
 					</Form>)
 			}
 			}
 		</Formik>
-	)
+	);
 };
 
 const Login = (props) => {
-
-
 	let navigate = useNavigate();
 	useEffect(() => {
 		if (props.isAuth) {
@@ -83,7 +93,9 @@ const Login = (props) => {
 	return (
 		<div className={s.login}>
 			<h1 className={s.login__header}>Добро пожаловать!</h1>
-			<LoginForm {...props} />
+			<LoginForm
+				{...props}
+			/>
 		</div>
 	);
 };
@@ -92,7 +104,6 @@ const mapStateToProps = (state) => {
 	return {
 		clientId: state.auth.clientId,
 		isAuth: state.auth.isAuth,
-
 	};
 };
 

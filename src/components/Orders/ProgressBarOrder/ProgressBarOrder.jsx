@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import s from './ProgressBarOrder.module.css'
 
-
 const ProgressBarOrder = (props) => {
 	const { dateDelivery, minIdx, maxIdx } = props;
 	const valueDelivery = (dateDelivery.length - 1) - minIdx <= 0
@@ -20,11 +19,16 @@ const ProgressBarOrder = (props) => {
 	}, [valueDelivery]);
 
 	return (
-		<progress className={!props.isOrderDelivery ? s.progress__active : s.progress}
+		<progress
+			className={
+				!props.isOrderDelivery
+					? s.progress__active
+					: s.progress
+			}
 			value={value}
 			max={max}
 		/>
-	)
+	);
 };
 
 export default ProgressBarOrder;
