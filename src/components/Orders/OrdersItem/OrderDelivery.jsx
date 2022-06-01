@@ -16,8 +16,12 @@ const OrderDelivery = (props) => {
     <div className={s.orderDelivery}>
       <div className={s.date}>
         <div className={s.nextDateWeekday}>
-          <span className={s.dateWeekday}>{nextDate[2]}</span>
-          <span className={s.dateDay}>{nextDate[1]}</span>
+          <span className={s.dateWeekday}>
+            {nextDate[2]}
+            </span>
+          <span className={s.dateDay}>
+            {nextDate[1]}
+            </span>
         </div>
         <div className={s.dateDelivery}>
           Ближайшая доставка

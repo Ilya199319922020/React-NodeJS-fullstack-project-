@@ -1,8 +1,7 @@
 import s from './Orders.module.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import OrderHeaderInfo from './OrdersItem/OrderHeaderInfo';
 import { NavLink } from 'react-router-dom';
-import ImageLoading from '../../Loading/Loading';
 
 const Orders = (props) => {
 
@@ -42,9 +41,16 @@ const Orders = (props) => {
       <div>
         <div >
           {isOrderDelivery
-            ? <b className={s.ordersBtn__text}> Мои заказы <span className={s.ordersBtn__count}>{ordersAll.length}</span></b>
+            ? <b className={s.ordersBtn__text}>
+              Мои заказы
+              <span className={s.ordersBtn__count}>
+                {ordersAll.length}
+              </span>
+            </b>
             : <NavLink onClick={onOrderId} to={`/orders/${props.clientId}`}>
-              <b className={s.ordersBtn__back} >Назад</b>
+              <b className={s.ordersBtn__back} >
+                Назад
+              </b>
             </NavLink>}
         </div>
         <NavLink to={`/orders/${props.clientId}/${props.orderId}`} >
@@ -52,9 +58,7 @@ const Orders = (props) => {
             {ordersElements}
           </div>
         </NavLink>
-
       </div>
-
     </div>
   </div >
 }

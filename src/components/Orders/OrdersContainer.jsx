@@ -61,8 +61,6 @@ const OrdersContainer = (props) => {
 		}
 	}, [deleteOrderId])
 
-
-
 	return <>
 		<Orders
 			ordersAll={props.orders}

@@ -27,7 +27,6 @@ module.exports = function (app) {
 						done(err);
 					}
 				},
-
 			)
 			);
 		},
@@ -53,7 +52,8 @@ module.exports = function (app) {
 						}
 					);
 				})(req, res, next);
-			})
+			}
+			);
 		},
 	};
 };

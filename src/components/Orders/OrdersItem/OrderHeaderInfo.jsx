@@ -34,7 +34,8 @@ const OrderHeaderInfo = (props) => {
           : s.headerInfo
       }
       value={props.valueId}
-      onClick={(value) => { onOrderCurrent(value) }}  >
+      onClick={(value) => { onOrderCurrent(value) }}
+    >
       <div className={s.headerInfo__item}>
         <div className={s.headerInfo__order}>
           <div>
@@ -45,8 +46,12 @@ const OrderHeaderInfo = (props) => {
             </span>
           </div>
           <div className={s.headerInfo__package}>
-            <div className={s.headerInfo__packageName}>{props.packageName}</div>
-            <div className={s.headerInfo__packageCalories} >{props.packageCalories}</div>
+            <div className={s.headerInfo__packageName}>
+              {props.packageName}
+            </div>
+            <div className={s.headerInfo__packageCalories} >
+              {props.packageCalories}
+            </div>
           </div>
         </div>
         <div >

@@ -63,7 +63,6 @@ const LoginForm = (props) => {
 								name='password'
 							/>
 						</div>
-
 						<div>
 							<button
 								className={s.loginForm__button}
@@ -92,7 +91,9 @@ const Login = (props) => {
 
 	return (
 		<div className={s.login}>
-			<h1 className={s.login__header}>Добро пожаловать!</h1>
+			<h1 className={s.login__header}>
+				Добро пожаловать!
+			</h1>
 			<LoginForm
 				{...props}
 			/>
